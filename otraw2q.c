@@ -34,7 +34,6 @@ int main(void)
   set_priority(10);
   fd_set set;
   struct timeval timeout;
-  ssize_t wrt;
 
   int rv;
   char buff[2];
@@ -90,13 +89,11 @@ int main(void)
           continue;
         }
         if(!logo_text) {
-          wrt = write ( STDOUT_FILENO, buff, read_len );
+          write ( STDOUT_FILENO, buff, read_len );
           fflush(stdout);
-		  if(wrt == -1) return 1;
           last_n = 0;
         }
       }
     }
   }
 }
-

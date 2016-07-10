@@ -38,7 +38,7 @@ int main(void)
   int rv;
   char buff[2];
   int len = 1;
-  size_t read_len;
+  size_t read_len, write_len;
   int last_n = 1;
   int logo_text = 1;
   int timeoutcount = 0;
@@ -89,7 +89,8 @@ int main(void)
           continue;
         }
         if(!logo_text) {
-          write ( STDOUT_FILENO, buff, read_len );
+          write_len = write ( STDOUT_FILENO, buff, read_len );
+          if(write_len != read_len) return 2; // error
           fflush(stdout);
           last_n = 0;
         }

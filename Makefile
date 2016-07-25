@@ -18,5 +18,5 @@ uninstall:
 
 deb:
 	checkinstall -D --default --install=$(INSTALL_DEB) --fstrans=yes --pkgversion `git describe --tags | sed -e 's/^v//'` \
-	--pkgname opentrigger-otraw2q -A all --pkglicense MIT --maintainer 'info@acolono.com' --pkgsource 'https://github.com/acolono/opentrigger-otraw2q' \
+	--pkgname opentrigger-otraw2q --pkglicense MIT --maintainer 'info@acolono.com' --pkgsource 'https://github.com/acolono/opentrigger-otraw2q' \
 	--pkgrelease '' make install

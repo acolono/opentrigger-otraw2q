@@ -6,5 +6,5 @@ Provides: opentrigger-otraw2q
 Enhances: bluez
 Recommends: supervisor
 Homepage: http://opentrigger.com/
-Vcs-Browser: https://github.com/acolono/opentrigger-otraw2q
 Description: bluez helper
+ https://github.com/acolono/opentrigger-otraw2q

@@ -1,10 +1,11 @@
 Package: opentrigger-otraw2q
-Maintainer: hello@acolono.com
+Maintainer: Acolono GmbH <hello@acolono.com>
 Architecture: __ARCH__
 Version: __VERSION__
 Provides: opentrigger-otraw2q
 Enhances: bluez
 Recommends: supervisor
+Depends: libc6
 Homepage: http://opentrigger.com/
 Description: bluez helper
  https://github.com/acolono/opentrigger-otraw2q

@@ -1,0 +1,6 @@
+Upstream-Name: opentrigger-otraw2q
+Source: https://github.com/acolono/opentrigger-otraw2q
+
+Files: *
+Copyright: 2016 Florian Fida <f+debian@fida.biz>
+License: MIT

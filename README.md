@@ -18,3 +18,4 @@ Overview of [OpenTrigger Eccosystem & Components](https://github.com/acolono/ope
 make
 sudo make install
 ```
+<sub>Open Trigger has been sponsored by netidee - powerful innovations</sub>
